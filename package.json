@@ -1,6 +1,7 @@
 {
   "name": "advent-of-code",
   "version": "1.0.0",
+  "private": "true",
   "description": "it's christmas baby",
   "main": "index.js",
   "scripts": {
