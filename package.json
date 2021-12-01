@@ -1,0 +1,20 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "it's christmas baby",
+  "main": "index.js",
+  "scripts": {
+    "start": "sh -c 'ts-node src/${0}.ts'"
+  },
+  "keywords": [
+    "code",
+    "ts"
+  ],
+  "author": "pupoSDC",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
