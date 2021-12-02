@@ -1,7 +1,7 @@
 import * as fs from "fs";
 
 const measurements = fs
-  .readFileSync("./data/0101.txt", "utf8")
+  .readFileSync("./data/0100.txt", "utf8")
   .split("\n")
   .map(Number);
 
