@@ -8,7 +8,8 @@
     "start": "sh -c 'ts-node src/${0}.ts'",
     "lint": "eslint src/**/*.ts",
     "format": "eslint src/**/*.ts --fix",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "keywords": [
     "code",
@@ -38,13 +39,8 @@
     },
     "rules": {}
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
-  },
   "lint-staged": {
-    "*": "prettier --write",
-    ".ts": "eslint --fix"
+    "src/**": "prettier --write",
+    "*.ts": "eslint --fix"
   }
 }
