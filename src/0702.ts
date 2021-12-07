@@ -1,6 +1,7 @@
 import * as fs from "fs";
 
 const crabs = fs.readFileSync("./data/0700.txt", "utf8").split(",").map(Number);
+const average = Math.floor(crabs.reduce((s, n) => s + n) / crabs.length);
 
 const calculateFuelNeeded = (target: number) =>
   crabs.reduce((fuel, pos) => {
@@ -9,11 +10,4 @@ const calculateFuelNeeded = (target: number) =>
     return fuel + crabFuel;
   }, 0);
 
-const max = [...crabs].sort()[crabs.length - 1];
-
-const fuels = new Array(max)
-  .fill(0)
-  .map((_, i) => calculateFuelNeeded(i))
-  .sort();
-
-console.log(fuels[0]);
+console.log(calculateFuelNeeded(average));
