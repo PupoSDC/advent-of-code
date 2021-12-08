@@ -1,7 +1,7 @@
 # Advent of Code 2021
 
-[Advent of code](https://adventofcode.com/)
-[Private Leaderboard](https://adventofcode.com/2021/leaderboard/private/view/1117715)
+- [Advent of code](https://adventofcode.com/)
+- [Private Leaderboard](https://adventofcode.com/2021/leaderboard/private/view/1117715)
 
 ## Setup and Running
 
