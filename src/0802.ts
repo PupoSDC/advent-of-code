@@ -13,6 +13,7 @@ type Cypher = {
   9: string;
 };
 
+// prettier-ignore
 const getCypher = (combos: string[]): Cypher => {
   const sortedCombos = combos.map((c) => c.split("").sort().join(""));
 
@@ -31,23 +32,14 @@ const getCypher = (combos: string[]): Cypher => {
 
   const sortedSizeSix = sortedCombos.filter((c) => c.length === 6);
 
-  cypher[9] = sortedSizeSix.find((c) =>
-    cypher[4].split("").reduce<boolean>((s, t) => s && c.includes(t), true)
-  )!;
-  cypher[6] = sortedSizeSix.find(
-    (c) =>
-      !cypher[1].split("").reduce<boolean>((s, t) => s && c.includes(t), true)
-  )!;
+  cypher[9] = sortedSizeSix.find((c) => cypher[4].split("").reduce<boolean>((s, t) => s && c.includes(t), true))!;
+  cypher[6] = sortedSizeSix.find((c) => !cypher[1].split("").reduce<boolean>((s, t) => s && c.includes(t), true))!;
   cypher[0] = sortedSizeSix.find((c) => c !== cypher[9] && c !== cypher[6])!;
 
   const sortedSizeFive = sortedCombos.filter((c) => c.length === 5);
 
-  cypher[3] = sortedSizeFive.find((c) =>
-    cypher[1]!.split("").reduce<boolean>((s, t) => s && c.includes(t), true)
-  )!;
-  cypher[5] = sortedSizeFive.find((c) =>
-    c.split("").reduce<boolean>((s, t) => s && cypher[6].includes(t), true)
-  )!;
+  cypher[3] = sortedSizeFive.find((c) => cypher[1]!.split("").reduce<boolean>((s, t) => s && c.includes(t), true))!;
+  cypher[5] = sortedSizeFive.find((c) => c.split("").reduce<boolean>((s, t) => s && cypher[6].includes(t), true))!;
   cypher[2] = sortedSizeFive.find((c) => c !== cypher[3] && c !== cypher[5])!;
 
   return cypher;
