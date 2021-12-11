@@ -27,7 +27,7 @@ yarn start 0101 # For day 1 problem 1
 | 8   | :heavy_check_mark: | :heavy_check_mark: |
 | 9   | :heavy_check_mark: | :heavy_check_mark: |
 | 10  | :heavy_check_mark: | :heavy_check_mark: |
-| 11  | :clock9:           | :clock9:           |
+| 11  | :heavy_check_mark: | :heavy_check_mark: |
 | 12  | :clock9:           | :clock9:           |
 | 13  | :clock9:           | :clock9:           |
 | 14  | :clock9:           | :clock9:           |
