@@ -27,13 +27,8 @@ yarn start 0101 # For day 1 problem 1
 | 8   | :heavy_check_mark: | :heavy_check_mark: |
 | 9   | :heavy_check_mark: | :heavy_check_mark: |
 | 10  | :heavy_check_mark: | :heavy_check_mark: |
-<<<<<<< HEAD
 | 11  | :heavy_check_mark: | :heavy_check_mark: |
-| 12  | :clock9:           | :clock9:           |
-=======
-| 11  | :clock9:           | :clock9:           |
-| 12  | :heavy_check_mark: | :clock9:           |
->>>>>>> b497fba (solution(day12): add solution for day 12 part 1)
+| 12  | :heavy_check_mark: | :heavy_check_mark: |
 | 13  | :clock9:           | :clock9:           |
 | 14  | :clock9:           | :clock9:           |
 | 15  | :clock9:           | :clock9:           |
