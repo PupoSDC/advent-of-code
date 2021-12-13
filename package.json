@@ -15,6 +15,10 @@
     "code",
     "ts"
   ],
+  "volta": {
+    "node": "17.2.0",
+    "yarn": "1.22.17"
+  },
   "author": "pupoSDC",
   "license": "ISC",
   "devDependencies": {
